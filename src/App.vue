@@ -1,13 +1,14 @@
 <script setup>
+  import router from "./router";
+  import { RouterView } from "vue-router";
+  import Welcome from './components/Welcome.vue'
 </script>
 
 <template>
-  <header>
-    <P>empty header</P>
-  </header>
-
   <main>
-    <p>empty body</p>
+    <div>
+      <Welcome />
+    </div>
   </main>
 </template>
 
