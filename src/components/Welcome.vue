@@ -1,5 +1,6 @@
 <script setup>
     import { ref, computed } from 'vue';
+    import SearchResults from './SearchResults.vue';
     const searchInput = ref('')
     const inputPresent = computed(()=> { return searchInput.value.length !== 0 })
 </script>
@@ -16,7 +17,7 @@
         
     </div>
     <div v-show="inputPresent">
-        <P>{{ searchInput }} {{ inputPresent }}</P>
+        <SearchResults :query="searchInput" />
     </div>
 </template>
 
