@@ -1,0 +1,23 @@
+{
+    "dongles": [
+        {
+            "id": "Bappataboopy",
+            "barcode": "PB123",
+            "category": "Pandas",
+            "Description": "Single Key",
+            "hidden": false,
+            "available": true,
+            "signOuts": []
+        }
+    ],
+    "categories": [
+        {
+            "id":1,
+            "description": "Pandas",
+            "subcategories": [
+                "Single",
+                "Double"
+            ]
+        }
+    ]
+}
