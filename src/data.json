@@ -1,11 +1,38 @@
 {
     "dongles": [
         {
-            "id": "Bappataboopy",
+            "id": "1",
             "barcode": "PB123",
             "category": "Pandas",
-            "Description": "Single Key",
+            "description": "Single Key",
             "hidden": false,
+            "available": true,
+            "signOuts": []
+        },
+        {
+            "id": "2",
+            "barcode": "PB456",
+            "category": "Pandas",
+            "description": "Single Key",
+            "hidden": false,
+            "available": true,
+            "signOuts": []
+        },
+        {
+            "id": "3",
+            "barcode": "PB467",
+            "category": "Pandas",
+            "description": "Double Key",
+            "hidden": false,
+            "available": true,
+            "signOuts": []
+        },
+        {
+            "id": "4",
+            "barcode": "PB999",
+            "category": "Pandas",
+            "description": "Poopy Key",
+            "hidden": true,
             "available": true,
             "signOuts": []
         }
