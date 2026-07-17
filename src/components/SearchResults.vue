@@ -1,14 +1,12 @@
+
+
 <script setup>
-    import db from "@/data.json"
-    import { computed } from 'vue'
+    // Componeent currently inactive. Put within Welcome.vue component for simplicity.
+
     import router from "@/router.js"
 
     const props = defineProps({
-        query: String
-    })
-    let dongles = db.dongles
-    const filtered = computed(()=> {
-        return dongles.filter(d => d.barcode.toLowerCase().includes(props.query.toLowerCase()) && !d.hidden)
+        results: Array
     })
 
     function goTo(bc) {
@@ -16,7 +14,7 @@
     } 
 </script>
 <template>
-    <div class="text-2xl">{{ filtered.length }} dongle<span v-show="filtered.length !== 1">s</span> found.</div>
+    <div class="text-2xl">{{ props.results.length }} dongle<span v-show="props.results.length !== 1">s</span> found.</div>
     <div>
         <table class="table-fixed">
         <thead>
@@ -28,7 +26,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="dongle in filtered" :key="dongle.barcode" :id="dongle.barcode" class="hover:bg-fuchsia-400" @click="goTo(dongle.barcode)">
+            <tr v-for="dongle in props.results" :key="dongle.barcode" :id="dongle.barcode" class="hover:bg-fuchsia-400" @click="goTo(dongle.barcode)">
                 <td>{{ dongle.barcode }}</td>
                 <td>{{ dongle.category }}</td>
                 <td>{{ dongle.description }}</td>

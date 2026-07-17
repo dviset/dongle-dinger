@@ -7,7 +7,7 @@ import DongleDetails from './components/DongleDetails.vue'
 
 const routes = [
   { path: '/', component: Welcome,  meta: { transition: 'slide-left' }, },
-  { path: '/Details/:id', component: DongleDetails, props: true, meta: { transition: 'slide-right' }, },
+  { path: '/Details/:bc', component: DongleDetails, props: true, meta: { transition: 'slide-right' }, },
 ]
 
 const router = createRouter({
