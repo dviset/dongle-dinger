@@ -7,7 +7,10 @@
 <template>
   <main>
     <div>
-      <Welcome />
+      Current Route: {{ $route.path }}
+    </div>
+    <div>
+      <RouterView  />
     </div>
   </main>
 </template>

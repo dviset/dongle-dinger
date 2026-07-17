@@ -1,6 +1,8 @@
 <script setup>
     import db from "@/data.json"
     import { computed } from 'vue'
+    import router from "@/router.js"
+
     const props = defineProps({
         query: String
     })
@@ -10,7 +12,7 @@
     })
 
     function goTo(bc) {
-        alert(bc)
+       router.push({ path: '/Details/' + bc })
     } 
 </script>
 <template>
