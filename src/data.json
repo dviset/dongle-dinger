@@ -24,8 +24,27 @@
             "category": "Pandas",
             "description": "Double Key",
             "hidden": false,
-            "available": true,
-            "signOuts": []
+            "available": false,
+            "signOuts": [
+                {
+                    "signedOutDate": "2023-08-01T10:00:00Z",
+                    "signedOutBy": "DV",
+                    "returnDate": "2023-08-03T15:30:00Z",
+                    "returnBy": "DV",
+                    "expectedReturnDate": "2023-08-02T12:00:00Z",
+                    "notes": "Stadium projection",
+                    "returned": true
+                },
+                {
+                    "signedOutDate": "2023-08-05T14:30:00Z",
+                    "signedOutBy": "DV",
+                    "returnDate": null,
+                    "returnBy": null,
+                    "expectedReturnDate": "2023-08-07T16:00:00Z",
+                    "notes": "Training",
+                    "returned": false
+                }
+            ]
         },
         {
             "id": "4",
